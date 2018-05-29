@@ -12,7 +12,7 @@ data["Date"]=pandas.to_datetime(data.index)
 #extract last 50 entries
 data1=data[-50:]
 #create Bokeh object 'p', depecrated warning, need to update...
-p=figure(x_axis_type='datetime', width=1000, height=300,responsive=True)
+p=figure(x_axis_type='datetime', width=1000, height=300,sizing_mode='scale_width')
 p.title.text="Candlestick Chart"
 
 w = 12*60*60*1000 # half day in ms
