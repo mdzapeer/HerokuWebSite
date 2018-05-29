@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block content%}
+<link rel="stylesheet" href={{url_for('static',filename='css/bokeh-0.12.15.min.css')| safe}} type="text/css" />
+<script type="text/javascript" src={{url_for('static',filename="scripts/bokeh-0.12.15.min.js")| safe}}></script>   
+<!--<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.15.min.js"></script>-->
+  <div class="chartpage">
+    <h1>Chart Page</h1>
+    <p>Embedded Bitcoin chart</p>
+    <p>uploaded on heroku</p>
+  </div>
+{{script1 | safe}}
+{{div1 | safe}}  
+{%endblock%}
